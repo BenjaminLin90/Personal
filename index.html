@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>僅此而已</title>
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Microsoft YaHei UI";
+            font-weight: 300;
+        }
+        #wrap{
+            width: 1024px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        #header{
+            border: 1px solid #d0d0d0;
+            box-shadow: 2px 2px 2px #9a9a9a;
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        ul.nav, ul.nav ul{
+            list-style-type: none;
+            box-shadow: 2px 2px 2px #9a9a9a;
+            border-radius: 5px;
+            float: left;
+        }
+        ul.nav li{
+            border-left: 1px solid #d0d0d0;
+        }
+        ul.nav li{
+            float: left;
+            width: 12em;
+        }
+        ul.nav li ul{
+            width: 12em;
+            position: absolute;
+            left: -999em;
+        }
+        .nav li:hover ul{
+            left: auto;
+        }
+        ul.nav a{
+            font-size: 1.5em;
+            display: block;
+            color: gray;
+            text-decoration: none;
+            text-align: center;
+            background: no-repeat 5% 50%;
+            padding: 0.3em 1em;
+        }
+        ul.nav a:hover{
+            color: #ffffff;
+            background: #d0d0d0 no-repeat 5% 50%;
+            padding: 0.3em 1em;
+            transform: rotateX(360deg);
+            transition: all 0.8s;
+        }
+        ul.nav li ul a{
+            background: url("http://www.benjaminlin.cn/images/arrow1.png") no-repeat 5% 50%;
+        }
+        ul.nav li ul a:hover{
+            background: url("http://www.benjaminlin.cn/images/arrow2.png") #d0d0d0 no-repeat 5% 50%;
+        }
+        #main{
+            margin-top: 2px;
+            height: 500px;
+            border: 1px solid #d0d0d0;
+            box-shadow: 2px 2px 2px #9a9a9a;
+            border-radius: 5px;
+        }
+        #footer{
+            height: 40px;
+        }
+        #footer p{
+            font-size: 1em;
+            line-height: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+        <ul class="nav">
+            <li><a href="http://www.benjaminlin.cn" target="_parent">HOME</a></li>
+            <li><a href="#">TASKS</a>
+                <ul>
+                    <li><a href="/ptteng/task1.html" target="_parent">Task1</a></li>
+                    <li><a href="/ptteng/task3/task3.html" target="_parent">Task3</a></li>
+                    <li><a href="/ptteng/task4/task4.html" target="_parent">Task4</a></li>
+                    <li><a href="/ptteng/task5/task5.html" target="_parent">Task5</a></li>
+                    <li><a href="/ptteng/task6/task6.html" target="_parent">Task6</a></li>
+                    <li><a href="/ptteng/task7/task7.html" target="_parent">Task7</a></li>
+                    <li><a href="/ptteng/task8/task8.html" target="_parent">Task8</a></li>
+                    <li><a id="last" href="/ptteng/task9/task9.html" target="_parent">Task9</a></li>
+                </ul>
+            </li>
+            <li><a href="#">NEW TASKS</a>
+                <ul>
+                    <li><a href="/ptteng/new/task1/task1.html" target="_parent">Task1</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.benjaminlin.cn" target="_parent">ABOUT</a></li>
+        </ul>
+    </div>
+    <div id="main">
+    </div>
+    <div id="footer">
+        <p>©2016-Benjaminlin.cn-闽ICP备16001293号</p>
+    </div>
+</div>
+</body>
+</html>
